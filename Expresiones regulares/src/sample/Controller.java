@@ -15,7 +15,7 @@ public class Controller {
     @FXML ListView listaEjer;
     @FXML Label lblresultado;
     @FXML protected void initialize(){
-        listaEjer.getItems().addAll("Ejercicio 1 ","Ejercicio 2 ","Validad password");
+        listaEjer.getItems().addAll("Ejercicio 1 ","Ejercicio 2 ","Validar Password");
     }
     public void procesar(ActionEvent event){
         int seleccion = listaEjer.getSelectionModel().getSelectedIndex();
