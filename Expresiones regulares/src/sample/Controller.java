@@ -19,7 +19,9 @@ public class Controller {
                 "Una palabra termine con count","Validar que hayan escrito 2 nombres","Validar una MAC Address",
                 "Validar que una palabra comience con mayuscula y termine con minuscula","Validar un numero binario de 8 digitos",
                 "Validar que se haya escrito correctamente un numero hexadecimal","Validar operacion de 1 digito",
-                "Validar que se ingrese correctamente el num de control del itsncg","Validar curp");
+                "Validar que se ingrese correctamente el num de control del itsncg","Validar curp","Validar una cantidad de $",
+                "Validar num de tarjeta de credito","Validar etiqueta html","Validar color hexadecimal","Validar un link",
+                "Validar query insert de sql","Validar if","Validar frase con salto de linea","Validar url de video de youtube");
     }
     public void procesar(ActionEvent event){
         int seleccion = listaEjer.getSelectionModel().getSelectedIndex();
@@ -43,7 +45,7 @@ public class Controller {
                 break;
             }
             case 4:{
-                expresion="([a-zA-Z]{5,}[(count)%])";
+                expresion="([a-zA-Z]{5,}[(count)$])";
                 break;
             }
             case 5:{
@@ -55,7 +57,7 @@ public class Controller {
                 break;
             }
             case 7: {
-                expresion="^[A-Z][a-zA-Z]+[(a-z)%]";
+                expresion="^[A-Z][a-zA-Z]+[(a-z)$]";
                 break;
             }
             case 8: {
@@ -71,13 +73,14 @@ public class Controller {
                 break;
             }
             case 11: {
-                expresion="^[0-9]{2}(CG)[(0-9)%]{4}";
+                expresion="^[0-9]{2}(CG)[(0-9)$]{4}";
                 break;
             }
             case 12: {
                 expresion="[A-Z]{1}[AEIOU]{1}[A-Z]{1}[A-Z]{1}[0-9]{2}[0-9]{2}[0-9]{2}[H|M][A-Z]{2}[BCDFGHJKLMNÑPQRSTVWXYZ]{1}[BCDFGHJKLMNÑPQRSTVWXYZ]{1}[BCDFGHJKLMNÑPQRSTVWXYZ]{1}[0-9]{2}";
                 break;
             }
+            
         }
         Pattern patron= Pattern.compile(expresion);
         Matcher matcher = patron.matcher(texto);
