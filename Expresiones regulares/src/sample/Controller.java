@@ -103,6 +103,7 @@ public class Controller {
             }
             case 18: {
                 expresion="^(INSERT|insert) (INTO|into) [\\w]+ (VALUES|values) [(]['][\\w]+['][,][\\d]+[)][;]$";
+                break;
             }
             case 19: {
                 // "if (expresion!1) {System.out.println(Hola mundo)}else {System.out.println(Adios mundo)};"
