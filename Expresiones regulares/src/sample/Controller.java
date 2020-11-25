@@ -80,7 +80,44 @@ public class Controller {
                 expresion="[A-Z]{1}[AEIOU]{1}[A-Z]{1}[A-Z]{1}[0-9]{2}[0-9]{2}[0-9]{2}[H|M][A-Z]{2}[BCDFGHJKLMNÑPQRSTVWXYZ]{1}[BCDFGHJKLMNÑPQRSTVWXYZ]{1}[BCDFGHJKLMNÑPQRSTVWXYZ]{1}[0-9]{2}";
                 break;
             }
-            
+            case 13: {
+                expresion="^[$]([0-9]+)[.]([0-9]{2})(MXN$)";
+                break;
+            }
+            case 14: {
+                expresion="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}";
+                break;
+            }
+            case 15: {
+                //use esta "<html> <body> <h1>My First Heading</h1> <p>My first paragraph.</p> </body> </html>"
+                expresion="^(<html>)[\\s](<body>)[\\s](<h1>)[\\w ]+(</h1>)[\\s](<p>)[\\w ]+[.](</p>)[\\s](</body>)[\\s](</html>)$";
+                break;
+            }
+            case 16: {
+                expresion="^(#)[a-fA-F\\d]{6}";
+                break;
+            }
+            case 17: {
+                expresion="^(http://)[a-z0-9]+[.](com)$";
+                break;
+            }
+            case 18: {
+                expresion="^(INSERT|insert) (INTO|into) [\\w]+ (VALUES|values) [(]['][\\w]+['][,][\\d]+[)][;]$";
+            }
+            case 19: {
+                // "if (expresion!1) {System.out.println(Hola mundo)}else {System.out.println(Adios mundo)};"
+                expresion="^(if)[\\s][(][\\w]+[=|==|!|<|>][\\w]+[)][\\s][{](System)[.](out)[.](println)[(][\\w ]+[)][}](else)[\\s][{](System)[.](out)[.](println)[(][\\w ]+[)][}][;]";
+                break;
+            }
+            case 20: {
+                expresion="[\\w]+[\\s](\\\\n)[\\s][\\w]+";
+                break;
+            }
+            case 21: {
+                //"https://www.youtube.com/watch?v=2V1fYJntoFA"
+                expresion="^(https://)(www)[.](youtube)[.](com)[/](watch)[?](v)[=][\\w]+";
+                break;
+            }
         }
         Pattern patron= Pattern.compile(expresion);
         Matcher matcher = patron.matcher(texto);
@@ -92,3 +129,4 @@ public class Controller {
 
     }
 }
+
