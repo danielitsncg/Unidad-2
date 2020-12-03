@@ -21,7 +21,8 @@ public class Controller {
                 "Validar que se haya escrito correctamente un numero hexadecimal","Validar operacion de 1 digito",
                 "Validar que se ingrese correctamente el num de control del itsncg","Validar curp","Validar una cantidad de $",
                 "Validar num de tarjeta de credito","Validar etiqueta html","Validar color hexadecimal","Validar un link",
-                "Validar query insert de sql","Validar if","Validar frase con salto de linea","Validar url de video de youtube");
+                "Validar query insert de sql","Validar if","Validar frase con salto de linea","Validar url de video de youtube",
+                "Palabra 1","Palabra 2","Palabra 3","Palabra 4","Palabra 5","Palabra 6","Palabra 7");
     }
     public void procesar(ActionEvent event){
         int seleccion = listaEjer.getSelectionModel().getSelectedIndex();
@@ -117,6 +118,45 @@ public class Controller {
             case 21: {
                 //"https://www.youtube.com/watch?v=2V1fYJntoFA"
                 expresion="^(https://)(www)[.](youtube)[.](com)[/](watch)[?](v)[=][\\w]+";
+                break;
+            }
+            case 22: {
+                //16-septiembre-20
+                expresion="^[a-z0-9_-]{3,16}$";
+               break;
+            }
+            case 23: {
+                //num-rastreo-8452132152
+                expresion="^[a-z0-9-]+$";
+                break;
+            }
+            case 24: {
+                //18cg0175@itsncg.edu.mx
+                expresion="^([a-z0-9_\\.-]+)@([\\da-z\\.-]+)\\.([a-z\\.]{2,6})$";
+                break;
+            }
+            case 25: {
+                //pendientona
+                expresion="^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[$@$!%*?&])[A-Za-z\\d$@$!%*?&]{8,}";
+                break;
+            }
+            case 26: {
+                //RGB(235 1 54)
+                expresion="[Rr][Gg][Bb][(](((([\\d]{1,3})[1,]{0,1})[\\s]*){3})[)]";
+                break;
+            }
+            case 27: {
+                //3:17
+                //05:37
+                //16:59
+                //23:59
+                expresion="^([0-9]|0[0-9]|1[0-9]|2[0-3]):[0-5][0-9]$";
+                break;
+            }
+            case 28: {
+                //+65.55, 180.0
+                //+30.380057, -107.879817
+                expresion="^[-+]?([1-8]?\\d(\\.\\d+)?|90(\\.0+)?),\\s*[-+]?(180(\\.0+)?|((1[0-7]\\d)|([1-9]?\\d))(\\.\\d+)?)$";
                 break;
             }
         }
