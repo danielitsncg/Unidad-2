@@ -48,6 +48,13 @@
     <ui_properties converted="true" />
     <breakpoint_rules converted="true" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
@@ -57,7 +64,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectId" id="1k7tJhF5JNfh8kp2rNcy0w22pLL" />
+  <component name="ProjectId" id="1lGLkNxkXxttwE0Q4YqEiTzNuNH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
@@ -76,6 +83,10 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/richtextfx-fat-0.10.5.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="recentsLimit" value="5" />
   </component>
   <component name="RunManager">
@@ -106,7 +117,7 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="sample.Main" />
-      <module name="Expresiones regulares" />
+      <module name="ItsCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -180,41 +191,29 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="158" key="FileChooserDialogImpl" timestamp="1607218621839">
+    <state x="722" y="158" key="FileChooserDialogImpl" timestamp="1607218776452">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="549" y="158" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1607218621839" />
-    <state width="1493" height="71" key="GridCell.Tab.0.bottom" timestamp="1606988619219">
+    <state x="722" y="158" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1607218776452" />
+    <state width="1493" height="27" key="GridCell.Tab.0.bottom" timestamp="1607594435950">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="71" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1606988619219" />
-    <state width="1493" height="71" key="GridCell.Tab.0.center" timestamp="1606988619219">
+    <state width="1493" height="27" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1607594435950" />
+    <state width="1493" height="27" key="GridCell.Tab.0.center" timestamp="1607594435950">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="71" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1606988619219" />
-    <state width="1493" height="71" key="GridCell.Tab.0.left" timestamp="1606988619219">
+    <state width="1493" height="27" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1607594435950" />
+    <state width="1493" height="27" key="GridCell.Tab.0.left" timestamp="1607594435950">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="71" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1606988619219" />
-    <state width="1493" height="71" key="GridCell.Tab.0.right" timestamp="1606988619219">
+    <state width="1493" height="27" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1607594435950" />
+    <state width="1493" height="27" key="GridCell.Tab.0.right" timestamp="1607594435950">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="71" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1606988619219" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1606986223327">
+    <state width="1493" height="27" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1607594435950" />
+    <state x="498" y="0" key="SettingsEditor" timestamp="1607218781221">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1536.834@0.0.1536.834" timestamp="1606986223327" />
-    <state x="93" y="93" width="1350" height="648" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1606986499899">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="93" y="93" width="1350" height="648" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.834@0.0.1536.834" timestamp="1606986499899" />
-    <state x="209" y="78" key="new project wizard" timestamp="1607218623733">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="209" y="78" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1607218623733" />
-    <state x="814" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1606282017488">
-      <screen x="0" y="0" width="1536" height="834" />
-    </state>
-    <state x="814" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1606282017488" />
+    <state x="498" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1607218781221" />
   </component>
 </project>
