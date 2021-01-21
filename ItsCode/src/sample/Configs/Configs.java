@@ -60,9 +60,11 @@ public class Configs {
             "1 puerta x de color x"*/
 
             "print(bienvenido a autopartes ncg)",
-            "ingresar j324 como llanta",
-            "buscar (puerta) de Dodge_Durango"
-            //pendienton
+            "ingresar x como puerta",
+            "ingresar z como llanta",
+            "ingresar y como amortiguador",
+            "ingresar v como rin",
+            "buscar (x) de Dodge_Durango"
     });
     public static String[] expresiones={
       /*"^(2) [\\w]+ (de) (modelo) [\\w]+",
@@ -76,7 +78,10 @@ public class Configs {
             "[\\d]{1} [a-z ]+ [\\w]+",
             "[\\d]{1} (puerta) [\\w]+ (de) (color) [\\w]+"*/
             "print[(][\\w ]+[)]",
-            "ingresar [\\d\\w]+ como (llanta|amortiguador|puerta)",
+            "ingresar [\\d\\w]+ como (puerta)",
+            "ingresar [\\d\\w]+ como (llanta)",
+            "ingresar [\\d\\w]+ como (amortiguador)",
+            "ingresar [\\d\\w]+ como (rin)",
             "buscar [(][\\w]+[)] (de) [\\w_]+"
     };
 }

@@ -1,5 +1,6 @@
 package sample.Interprete;
 
+import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -31,8 +32,13 @@ public class Compilador {
               String tipoToken="";
               if (arreglo[3].equals("puerta")){
                   tipoToken = PUERTA;
-              }else {
-                  tipoToken= AMORTIGUADOR;}
+              }else if (arreglo[3].contains("llanta")){
+                  tipoToken= LLANTA;
+              }else if (arreglo[3].contains("amortiguador")){
+                  tipoToken= AMORTIGUADOR;
+              }else if (arreglo[3].contains("rin")){
+                  tipoToken= RIN;
+              }
               Token token = new Token(tipoToken,arreglo[1].trim());
               arrayToken.add(token);
           }else {
@@ -43,9 +49,21 @@ public class Compilador {
           int i1=renglon.indexOf('(')+1;
           int i2=renglon.indexOf(')');
           String texto=renglon.substring(i1,i2);
-          ImageView imageView = new ImageView("/sample/Imagenes/pollo.gif");
-          pane.getChildren().add(imageView);
-          consola.appendText("\n Buscando la pieza "+texto);
+          if (validar(texto)){
+
+              Token t1=buscarToken(texto);
+              System.out.println(t1.getModelo());
+              System.out.println(t1.getPieza());
+              System.out.println(t1.getModelo());
+              ImageView imageView = new ImageView("/sample/Imagenes/pollo.gif");
+              Label label = new Label("Buscando la pieza "+ t1.getPieza());
+              pane.getChildren().add(imageView);
+              pane.getChildren().add(label);
+          }else {
+              ImageView imageView = new ImageView("/sample/Imagenes/vacio.gif");
+              pane.getChildren().add(imageView);
+              this.consola.appendText("\n la pieza con el nombre "+texto+" no se encuentra disponible");
+          }
 
       }
       return errores;
@@ -59,5 +77,13 @@ public class Compilador {
         }
         return existe;
     }
-
+    public Token buscarToken(String nombre){
+        Token existe=null;
+        for (int x=0;x<arrayToken.size();x++){
+            if (arrayToken.get(x).getModelo().equals(nombre)){
+             return arrayToken.get(x);
+            }
+        }
+        return existe;
+    }
 }
