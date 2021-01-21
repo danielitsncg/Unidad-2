@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
@@ -39,6 +40,14 @@
       <VBox fx:id="centro" prefHeight="651.0" prefWidth="800.0" BorderPane.alignment="CENTER" />
    </center>
    <bottom>
-      <TextArea fx:id="consola" prefHeight="112.0" prefWidth="800.0" BorderPane.alignment="CENTER" />
+      <TextArea fx:id="consola" prefHeight="112.0" prefWidth="800.0" BorderPane.alignment="TOP_LEFT" />
    </bottom>
+   <right>
+      <VBox fx:id="paneResult" prefHeight="656.0" prefWidth="132.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+            <Label text="Frase" />
+         </children>
+      </VBox>
+   </right>
 </BorderPane>

@@ -6,18 +6,18 @@ public class Configs {
     public static final String[] KEYWORDS = new String[] {
 
             //modelos
-            "Honda Accord 2010","Italika 250z 2015","Nissan Tsuru 1995","Honda CRF250 2018","Nissan March 2018","Subaru WRX STi 2008",
-            "Kawasaki KLX 230R 2020","Nissan Altima 2005","Nissan Versa 2018","Harley Davidson Road King 2020","Ford Fiesta 2005",
-            "Yamaha XTZ-150 2020","Dodge Durango 2012","Honda Civic Coupe 2018","BMW F 900 XR","Nissan 370Z Nismo 2020","Chevrolet Spark 2015",
+            "Honda_Accord","Italika_250z","Nissan_Tsuru","Honda_CRF250","Nissan_March","Subaru_WRX",
+            "Kawasaki_KLX_230R","Nissan_Altima","Nissan_Versa","Harley_Davidson_Road_King","Ford_Fiesta",
+            "Yamaha_XTZ_150","Dodge_Durango","Honda_Civic_Coupe","BMW_F_900_XR","Nissan_370Z","Chevrolet_Spark",
 
             //piezas
             "puerta","puertas","llanta","llantas","parabrisa","parabrisas","rin","rines","amortiguador","amortiguadores","faro delantero",
             "faros delanteros","faro trasero","faros traseros",
 
             //color
-            "Negro","Negros","Negra","Negras","Naranja","Naranjas","Rojo","Rojos","Roja","Rojas","Azul","Azules","Amarillo","Amarillos","Amarilla",
-            "Amarillas","Verde","Verdes","Rosa","Rosas","Dorado","Dorados","Dorada","Doradas","Blanco","Blancos","Blanca","Blancas","Cafe","Cafes",
-            "Gris","Grises",
+            "negro","negros","negra","negras","naranja","naranjas","rojo","rojos","roja","rojas","azul","azules","amarillo","amarillos","amarilla",
+            "amarillas","verde","verdes","rosa","rosas","dorado","dorados","dorada","doradas","blanco","blancos","blanca","blancas","cafe","cafes",
+            "gris","grises",
 
             //estado
             "nueva","nuevo","nuevas","nuevos","seminueva","seminuevo",
@@ -26,7 +26,7 @@ public class Configs {
             "1","2","3","4","5","6","7","8","9","10",
 
             //palabras extra
-            "y","de","color","modelo"
+            "y","de","color","como","modelo","print","ingresar","buscar",
     };
 
     public static final String KEYWORD_PATTERN = "\\b(" + String.join("|", KEYWORDS) + ")\\b";
@@ -48,27 +48,35 @@ public class Configs {
     );
 
     public static final String sampleCode = String.join("\n", new String[] {
-            "2 x de modelo x",
+            /*"2 x de modelo x",
             "3 rines x de modelo x",
             "1 faro delantero x",
-            "4 llantas x de modelo Dodge Durango 2012",
+            "4 llantas x de modelo Dodge_Durango",
             "1 parabrisa nuevo",
             "2 x de color x",
             "x amortiguadores x de modelo x",
-            "2 x y 1 rin de modelo Nissan Tsuru 1995",
+            "2 x y 1 rin de modelo Nissan_Tsuru",
             "2 faros delanteros x",
-            "1 puerta x de color x"
+            "1 puerta x de color x"*/
+
+            "print(bienvenido a autopartes ncg)",
+            "ingresar j324 como llanta",
+            "buscar (puerta) de Dodge_Durango"
+            //pendienton
     });
     public static String[] expresiones={
-      "^(2) [\\w]+ (de) (modelo) [\\w]+",
+      /*"^(2) [\\w]+ (de) (modelo) [\\w]+",
             "[\\d]{1,} (rines) [\\w]{1,9} (de) (modelo) [\\w]+",
             "(1) [\\w ]+ [\\w]+",
-            "[\\d]{1} (llantas) [\\w]+ (de modelo Dodge Durango 2012)",
+            "[\\d]{1} (llantas) [\\w]+ (de modelo Dodge_Durango)",
             "^(1) [\\w]{9} (nuevo)",
             "^(2) [\\w]+ (de) (color) [\\w]",
             "[\\w]+ (amortiguadores) [\\w]+ (de) (modelo) [\\w]+",
-            "^(2) [\\w]+ (y) [\\d]{1} [a-z]+ (de) (modelo) (Nissan Tsuru 1995)",
+            "^(2) [\\w]+ (y) [\\d]{1} [a-z]+ (de) (modelo) (Nissan_Tsuru)",
             "[\\d]{1} [a-z ]+ [\\w]+",
-            "[\\d]{1} (puerta) [\\w]+ (de) (color) [\\w]+"
+            "[\\d]{1} (puerta) [\\w]+ (de) (color) [\\w]+"*/
+            "print[(][\\w ]+[)]",
+            "ingresar [\\d\\w]+ como (llanta|amortiguador|puerta)",
+            "buscar [(][\\w]+[)] (de) [\\w_]+"
     };
 }
